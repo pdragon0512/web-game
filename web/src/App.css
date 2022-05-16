@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Chalkboard-Bold';
+  src: url('../public/assets/fonts/chalkboard-bold.eot'); /* IE9 Compat Modes */
+  src: url('../public/assets/fonts/chalkboard-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../public/assets/fonts/chalkboard-bold.woff') format('woff'), /* Modern Browsers */
+  url('../public/assets/fonts/chalkboard-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../public/assets/fonts/chalkboard-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.ruleta {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+button .black {
+color: black;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo { animation: App-logo-spin infinite 20s linear; }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link { color: #61dafb; }
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+
+  to { transform: rotate(360deg); }
+}
+
+.container {
+  background-color: #ffffff80;
+  width: 100%;
+  max-width: 510px;
+  padding-top: 35px;
+  box-shadow: 15px 30px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  -webkit-perspective: 600px;
+  perspective: 600px;
+  margin: auto;
+}
+
+div.coin-flip-container {
+  font-family: 'Chalkboard-Bold';
+  background-image: url("./assets/images/coin-flip/ape_strawhat.png"), url("./assets/images/coin-flip/ape_cowboy_hat.png"), url("./assets/images/coin-flip/background_pc.png");
+  background-size: 20vw, 20vw, 100% 100%;
+  background-position: -5.5% 80%, right -6% top 10%, bottom;
+  background-repeat: no-repeat;
+}
+
+div.roulette-container {
+  font-family: 'Chalkboard-Bold';
+  background-image: url("./assets/images/roulette/background_pc.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+div.slots-container {
+  font-family: 'Chalkboard-Bold';
+  background-image: url("./assets/images/slots/background_pc.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1024px) {
+  div.coin-flip-container {
+      background-image: url("./assets/images/coin-flip/ape_strawhat.png"), url("./assets/images/coin-flip/ape_cowboy_hat.png"), url("./assets/images/coin-flip/background_mobile.png");
+      background-size: 30vw, 30vw, cover;
+      background-position: left -10% center, right -10% center, top;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  div.roulette-container {
+      background-image: url("./assets/images/roulette/background_mobile.png");
+      background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  div.slots-container {
+      background-image: url("./assets/images/slots/background_mobile.png");
+      background-size: cover;
+  }
+}

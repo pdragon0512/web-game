@@ -1,0 +1,217 @@
+:root{
+    --my-end-rotate-head: 1980deg;
+    --my-end-rotate-tail: 2160deg;
+    --my-animation-time: 5s;
+}
+.container {
+    background-color: #ffffff80;
+    width: 100%;
+    max-width: 510px;
+    padding-top: 35px;
+    box-shadow: 15px 30px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+    margin:auto;
+}
+
+.detail {
+    background-color: #ffffff80;
+    color: #101020;
+    font-weight: 500;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-top: 55px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
+}
+
+.stats {
+    display: flex;
+    margin-top: 15px;
+}
+
+.coin {
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+    margin: 32px auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 20;
+}
+
+/* .coin{
+    height: 256px;
+    width: 256px;
+    position: relative;
+    margin: 32px auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+} */
+
+.coin img {
+    width: 100%;
+}
+
+.heads,
+.tails {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% 5100%;
+    
+}
+
+
+
+
+@keyframes spin-tails {
+    0% {
+        transform: rotateX(0);
+    }
+    100% {
+        transform: rotateX(var(--my-end-rotate-head));
+    }
+}
+@keyframes spin-heads {
+    0% {
+        transform: rotateX(0);
+    }
+    100% {
+        transform: rotateX(var(--my-end-rotate-tail));
+    }
+}
+
+@keyframes spin-tails-y {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(var(--my-end-rotate-head));
+    }
+}
+@keyframes spin-heads-y {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(var(--my-end-rotate-tail));
+    }
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+}
+
+button.bet_up{
+    background-image: url('../assets/images/coin-flip/bet_head.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button.bet_down{
+    background-image: url('../assets/images/coin-flip/bet_tail.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button.betting-up-passive {
+    width: 80px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    cursor: pointer;
+}
+
+button.betting-down-passive {
+    width: 80px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    cursor: pointer;
+}
+
+button.betting-down-active {
+    width: 80px;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    padding: 0;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    cursor: pointer;
+    background-color: #fc246c;
+}
+
+button.betting-up-active {
+    width: 80px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    cursor: pointer;
+    background-color: #24cafc;
+}
+
+div.buttons button {
+    width: 150px;
+    padding: 15px 0;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#flip-button {
+    background-color: #053469;
+    color: #ffffff;
+}
+
+#flip-button:disabled {
+    background-color: #e1e0ee;
+    border-color: #e1e0ee;
+    color: #101020;
+}
+
+#reset-button {
+    background-color: #674706;
+    color: white;
+}
+
+input.amount:focus-visible {
+    outline: none;
+
+}
+
+input.amount{
+    background-color: #05346900;
+    padding-left: 10px;
+    width:80px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+p.item {
+    margin: 5px 0px;
+}

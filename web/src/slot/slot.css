@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Cairo");
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#repeatButton {
+    appearance: none;
+    border: none;
+    background: url(https://andyhoffman.codes/random-assets/img/slots/repeat.png) transparent 0 0 no-repeat;
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    animation: 6s linear infinite spin;
+}
+
+h1 {
+    font-size: 150%;
+    padding: 0.25em 0.5em;
+    font-family: "Cairo", sans-serif;
+}
+
+h1 span {
+    color: aliceblue;
+    border: 1px solid hsla(208, 100%, 97.1%, 0.2);
+    padding: 0.1em 0.2em;
+}
+
+.icons {
+    display: inline-block;
+    border-radius: 15px;
+    width: 100px;
+    height: 282px;
+    background-size: 74px;
+    overflow: hidden;
+    /* background-image: url(https://andyhoffman.codes/random-assets/img/slots/sprite5.png); */
+    background-repeat: repeat-y;
+    background-position-x: 13px;
+    will-change: backgroundPosition;
+    transition: 0.3s background-position ease-in-out;
+    transform: translateZ(0);
+}
+
+/* .icons::before{
+    content: '';
+    display: block;
+    height: 50%;
+    width: calc(100% + 100px);
+    box-shadow: inset -3em 3em 4em #0c090a;
+} */
+
+.icons:nth-child(2) {
+    margin: 0 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.spinner-container {
+    transform:scaleY(0.8);
+    padding: 2em;
+    display: inline-flex;
+    transition: 0.3s transform;
+}
+
+.app-wrap.winner-false {
+    animation: linear 1s spin;
+}
+
+/* .spinner-container::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 180px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    left: 30px;
+    background: rgba(255, 0, 0, 0.1);
+} */
+
+.gradient-fade {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(
+        to bottom,
+        rgba(143, 143, 143, 0.25) 0%,
+        rgba(64, 64, 64, 0) 25%,
+        rgba(64, 64, 64, 0) 35%,
+        rgba(128, 123, 123, 0.15) 50%,
+        rgba(64, 64, 64, 0) 65%,
+        rgba(64, 64, 64, 0) 75%,
+        rgba(143, 143, 143, 0.25) 100%
+    );
+}
