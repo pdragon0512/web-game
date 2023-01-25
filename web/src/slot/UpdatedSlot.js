@@ -214,18 +214,7 @@ const UpdatedSlot = (props) => {
                         </Grid>
                     </Grid>
                 </div>
-                {/* <div className='stats'>
-                    <Grid container spacing={2}>
-                        <Grid item xs={6} style={{display:'flex'}}>
-                            <p className='item' id="heads-count">Bet:    </p>
-                        </Grid>
-                        <Grid item xs={6} style={{display:'flex', justifyContent:'flex-end'}}>
-                            <div className='betting'>
-                            </div>
-                        </Grid>
-                    </Grid>
 
-                </div> */}
                 <div className='stats'>
                     <Grid container spacing={2}>
                         <Grid item xs={6} style={{display:'flex'}}>
