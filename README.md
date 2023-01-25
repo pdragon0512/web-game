@@ -4,9 +4,6 @@ This web app contains Roulette Game, Casino, Card Game
 
 ### `npm start`
 
-Runs the app in the development mode.\
-
-The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `npm test`
