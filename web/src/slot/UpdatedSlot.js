@@ -35,14 +35,7 @@ const UpdatedSlot = (props) => {
     const child3 = useRef();
     const [payline, setPayline] = useState({first:2,sencod:1,third:4});
     const handleClick = async () => {
-        // const lines = await fetch('setting/getAllPaylineSettings');
-        // const paylines = await lines.json();
-        // if (paylines.isSuccess === false) {
-        //     toast.error(paylines.message);
-        //     return;
-        // }
-
-        // var paylineIndex = Math.floor(Math.random() * (paylines.result.length + 1));
+       
         var paylineIndex = Math.floor(Math.random() * (3 + 1));
         // setPayline({first:2,sencod:1,third:4});
         console.log(payline);
