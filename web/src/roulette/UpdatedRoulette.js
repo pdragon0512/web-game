@@ -10,17 +10,7 @@ import ButtonGroup from '@mui/material/ButtonGroup'
 // import Box from 'components/MDBox'
 import { Card, Hidden } from '@mui/material'
 import RTable1 from './RTable1'
-// import RTable2 from './RTable2'
-// import RTable3 from './RTable3'
 
-// import { makeStyles } from '@material-ui/core/styles';
-// import TextField from '@material-ui/core/TextField';
-// import AccountCircle from '@material-ui/icons/AccountCircle';
-// const useStyles = makeStyles((theme) => ({
-//   margin: {
-//     margin: theme.spacing(1),
-//   },
-// }));
 
 const buttons = [
   <Button key="one">One</Button>,
