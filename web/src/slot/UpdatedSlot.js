@@ -114,12 +114,6 @@ const UpdatedSlot = (props) => {
                 line.push(temp);
             }
             console.log(line);
-            // lines.result.forEach((payline) => {
-            //     if (line[payline.first - 1][0] === line[payline.second - 1][1] &&
-            //         line[payline.second - 1][1] === line[payline.third - 1][2]) {
-            //         isMatch = true;
-            //     }
-            // });
             return line[0];
         }
     }
