@@ -2,8 +2,6 @@
 
 This web app contains Roulette Game, Casino, Card Game
 
-### `npm start`
-
 You may also see any lint errors in the console.
 
 
