@@ -24,27 +24,6 @@ const App = () => {
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
-    
-    // const populateBetter = async () => {
-
-    //     const response = await fetch('player/getPlayer');
-    //     const data = await response.json();
-    //     if (data.isSuccess) {
-    //         setBalance(data.result.balance);
-    //     } else {
-    //         console.log(data.message);
-    //     }
-    // };
-
-    // useEffect(() => {
-    //     populateBetter()
-    //     console.log(main.current?.scrollHeight, document.documentElement.clientHeight)
-    //     if (main.current?.scrollHeight > document.documentElement.clientHeight) {
-    //         setHeight(false);
-    //     } else {
-    //         setHeight(true);
-    //     }
-    // }, [main.current?.scrollHeight])
 
     return (
         <>
