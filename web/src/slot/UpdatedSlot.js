@@ -39,15 +39,6 @@ const UpdatedSlot = (props) => {
         var paylineIndex = Math.floor(Math.random() * (3 + 1));
         // setPayline({first:2,sencod:1,third:4});
         console.log(payline);
-        // var requestOptions = {
-        //     method: 'POST',
-        //     headers: myHeaders,
-        //     body: JSON.stringify({
-        //         'game': 'slots',
-        //         'amount': amount,
-        //         'multiplier': 2
-        //     })
-        // };
 
         // const response = await fetch('bet/Bet', requestOptions);
         // const data = await response.json();
@@ -123,12 +114,6 @@ const UpdatedSlot = (props) => {
                 line.push(temp);
             }
             console.log(line);
-            // lines.result.forEach((payline) => {
-            //     if (line[payline.first - 1][0] === line[payline.second - 1][1] &&
-            //         line[payline.second - 1][1] === line[payline.third - 1][2]) {
-            //         isMatch = true;
-            //     }
-            // });
             return line[0];
         }
     }
@@ -229,18 +214,7 @@ const UpdatedSlot = (props) => {
                         </Grid>
                     </Grid>
                 </div>
-                {/* <div className='stats'>
-                    <Grid container spacing={2}>
-                        <Grid item xs={6} style={{display:'flex'}}>
-                            <p className='item' id="heads-count">Bet:    </p>
-                        </Grid>
-                        <Grid item xs={6} style={{display:'flex', justifyContent:'flex-end'}}>
-                            <div className='betting'>
-                            </div>
-                        </Grid>
-                    </Grid>
 
-                </div> */}
                 <div className='stats'>
                     <Grid container spacing={2}>
                         <Grid item xs={6} style={{display:'flex'}}>
