@@ -1,6 +1,6 @@
 # Web based Casino game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web app contains Roulette Game
 
 ## Available Scripts
 
