@@ -2,10 +2,6 @@
 
 This web app contains Roulette Game, Casino, Card Game
 
-## Available Scripts
-
-In the project directory, you can run:
-
 ### `npm start`
 
 Runs the app in the development mode.\
