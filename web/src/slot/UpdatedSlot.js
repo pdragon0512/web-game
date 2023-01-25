@@ -39,15 +39,6 @@ const UpdatedSlot = (props) => {
         var paylineIndex = Math.floor(Math.random() * (3 + 1));
         // setPayline({first:2,sencod:1,third:4});
         console.log(payline);
-        // var requestOptions = {
-        //     method: 'POST',
-        //     headers: myHeaders,
-        //     body: JSON.stringify({
-        //         'game': 'slots',
-        //         'amount': amount,
-        //         'multiplier': 2
-        //     })
-        // };
 
         // const response = await fetch('bet/Bet', requestOptions);
         // const data = await response.json();
