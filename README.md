@@ -1,6 +1,6 @@
 # Web based Casino game
 
-This web app contains Roulette Game
+This web app contains Roulette Game, Casino
 
 ## Available Scripts
 
